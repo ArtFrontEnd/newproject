@@ -1,0 +1,29 @@
+header{
+	height: 77px; 
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.container{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	background: red;
+}
+.logo-parent{
+	display: inline-block;
+	vertical-align: middle;
+}
+.header-nav{
+	display: inline-block;
+	vertical-align: middle;
+}
+.nav-list{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 30px;
+	margin-left: 30px;
+} 
+svg{
+	width: 100px;
+	height: 55px;
+}	
