@@ -1,7 +1,33 @@
+.social-icon a{
+	display: inline-block;
+	color: red;
+	width: 66px;
+}
+.socil-icon a{
+	display: inline-block;
+	color: black;
+	width: 100%;
+}
+.parent-header{
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	align-items: center;
+}
+.burger-icon{
+	margin-right: 30px;
+	float: right;
+	display: none;
+	width: 60px;
+	height: 60px;
+	background-image: url('../images/burger-list-menu-navigation.svg');
+}
 header{
 /*	height: 77px; */
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	z-index: 20;
+	position: relative;
 }
 .container{
 	max-width: 1180px;
@@ -15,7 +41,6 @@ display: block;
 	display: inline-block;
 	vertical-align: middle;
 	width: 100px;
-	height: 55px;
 }
 .logo-parent img{
 	width: 100px;
@@ -31,15 +56,33 @@ display: block;
 	vertical-align: middle;
 	margin-right: 30px;
 	margin-left: 30px;
+	font-family: 'Roboto.it',sans-serif;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #3d58a6;
+	font-weight: bold;
+/*	cursor: pointer;*/
 } 
-.social-icon{
-	background: red;
-	width: 305px;
-	height: 100px;
+.nav-list a{
+	color: #3d58a6;
+}
+.nav-list:hover{
+	opacity: 0.5;
+	color: red;
+}
+.social-icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+.social-icon li{
+	display: inline-block;
+	vertical-align: middle;
 }
 .banner-container{
 	background-color: #E6E6E6;
 	padding: 30px 0;
+	position: relative;
+	z-index: 10;
 }
 .banner-container .banner-child-container{
 	position: relative;
@@ -145,6 +188,27 @@ float: right;
 	}
 	.part-article:last-child{
 		display: none;
+	}
+
+	.burger-icon{
+		display: inline-block;
+	}
+	.header-nav{
+		position: fixed;
+		width: 100%;
+		height: calc(100% - 130px);
+		top: 130px;
+		left: -100%;
+		background: red;
+		margin-left: inherit;
+/*		transition-property: left;
+		transition-duration: 5s;
+		transition-timing-function: ease;
+		transition-delay: 5s;*/
+		transition: left .3s ease;
+	}
+	.header-nav.active{
+		left: 0;
 	}
 }
 @media (max-width: 480px){
