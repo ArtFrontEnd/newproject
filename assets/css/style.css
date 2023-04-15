@@ -1,13 +1,21 @@
+.search a{
+	display: inline-block;
+	color: black;
+}
 .social-icon a{
 	display: inline-block;
 	color: red;
-	width: 66px;
+	width: 30px;
 }
-.socil-icon a{
+.social-icon1{
+	display: none;
+}
+.social-icon1 a{
 	display: inline-block;
 	color: black;
-	width: 100%;
+
 }
+
 .parent-header{
 	display: flex;
 	justify-content: space-between;
@@ -223,4 +231,19 @@ float: right;
 		display:block;
 		width: calc(100% - 30px);
 		margin: 22px 15px;
+	}
+	.social-icon1{
+		display: block;	
+		text-align: center;
+	}
+	.social-icon1 li{
+		height: 40px;
+	}
+	.social-icon{
+		display: none;
+	}
+	.header-nav .nav-list{
+		height: 40px;
+		display: block;
+		text-align: center;
 	}
