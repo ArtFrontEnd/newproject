@@ -130,22 +130,16 @@ display: block;
 	margin-left: 10px;
 	text-transform: lowercase;
 }
+.videos-parent{
+	display: flex;
+	justify-content: space-between;
+}
 .part-video{
-	width: 570px;
-	height: 320px;
+	min-width: 570px;
+	min-height: 320px;
 	background-color: #f2f2f2;
 }
-.blue-box .videos-parent .part-video.left{
-float: left;
-}
-.blue-box .videos-parent .part-video.right{
-float: right;
-}
-.clearfix:after{
-	content: "";
-	display: block;
-	clear: both;
-}
+
 .article-container{
 	display: flex;
 	flex-wrap: wrap;
