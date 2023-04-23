@@ -1,4 +1,4 @@
-.search a{
+/* .search a{
 	display: inline-block;
 	color: black;
 }
@@ -13,7 +13,6 @@
 .social-icon1 a{
 	display: inline-block;
 	color: black;
-
 }
 
 .parent-header{
@@ -21,7 +20,7 @@
 	justify-content: space-between;
 	height: 100%;
 	align-items: center;
-}
+} */
 .burger-icon{
 	margin-right: 30px;
 	float: right;
