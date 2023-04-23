@@ -2,7 +2,7 @@
 	display: inline-block;
 	color: black;
 }
-/* .social-icon a{
+.social-icon a{
 	display: inline-block;
 	color: red;
 	width: 30px;
@@ -19,7 +19,7 @@
 	justify-content: space-between;
 	height: 100%;
 	align-items: center;
-} */
+}
 .burger-icon{
 	margin-right: 30px;
 	float: right;
