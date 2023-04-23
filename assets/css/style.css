@@ -69,15 +69,23 @@ display: block;
 	text-transform: uppercase;
 	color: #3d58a6;
 	font-weight: bold;
+	transition: all 0.3s;
 /*	cursor: pointer;*/
 } 
 .nav-list a{
 	color: #3d58a6;
+	transition: all 0.3s;
 }
 .nav-list:hover{
+	font-size: 100px;
 	opacity: 0.5;
 	color: red;
 }
+.nav-list:active{
+	opacity: 1;
+	color: blue;
+}
+
 .social-icon {
 	display: inline-block;
 	vertical-align: middle;
@@ -135,8 +143,8 @@ display: block;
 	justify-content: space-between;
 }
 .part-video{
-	min-width: 570px;
-	min-height: 320px;
+	width: 570px;
+	height: 320px;
 	background-color: #f2f2f2;
 }
 
@@ -209,6 +217,7 @@ display: block;
 		top: 130px;
 		left: -100%;
 		background: red;
+		opacity: 0.5;
 		margin-left: inherit;
 /*		transition-property: left;
 		transition-duration: 5s;
@@ -241,3 +250,4 @@ display: block;
 		display: block;
 		text-align: center;
 	}
+a 
