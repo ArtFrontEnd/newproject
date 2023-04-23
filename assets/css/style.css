@@ -1,8 +1,8 @@
-/* .search a{
+.search a{
 	display: inline-block;
 	color: black;
 }
-.social-icon a{
+/* .social-icon a{
 	display: inline-block;
 	color: red;
 	width: 30px;
@@ -14,7 +14,6 @@
 	display: inline-block;
 	color: black;
 }
-
 .parent-header{
 	display: flex;
 	justify-content: space-between;
