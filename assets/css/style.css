@@ -15,9 +15,13 @@
 	color: black;
 }
 .parent-header{
+	position: fixed;
+	background-color: white;
+	width: 100%;
 	display: flex;
-	justify-content: space-between;
-	height: 100%;
+	top: 0;
+	left: 0;
+	justify-content: space-around;
 	align-items: center;
 }
 .burger-icon{
@@ -141,11 +145,40 @@ display: block;
 	justify-content: space-between;
 }
 .part-video{
+	position: relative;
 	width: 570px;
 	height: 320px;
 	background-color: #f2f2f2;
 }
-
+.videos-parent .part-video span{
+	font-size: 50px;
+ 	position: absolute; 
+	left: 50%;
+	top: 50%; 
+	/* transform: translate3d(-50%, -50%, 0) rotate(25deg)skewX(25deg); */
+	/* transform: translate3d(-50%, -50%, 0) rotate(25deg)skew(25deg); */
+	animation: anim 4s infinite;
+}
+@keyframes anim {
+	0%{
+		transform: translate3d(-50%, -50%, 0) rotate(0deg)skewX(0deg);
+}
+	20%{
+		transform: translate3d(-50%, -50%, 0) rotate(25deg)skewX(0deg);
+}
+	40%{
+		transform: translate3d(-50%, -50%, 0) rotate(25deg)skewX(0deg);
+}
+	60%{
+		transform: translate3d(-50%, -50%, 0) rotate(180deg)skewX(0deg);
+}
+	80%{
+		transform: translate3d(-50%, -50%, 0) rotate(50deg)skewX(0deg);
+}
+	100%{
+		transform: translate3d(-50%, -50%, 0) rotate(0deg)skewX(0deg);
+}
+}
 .article-container{
 	display: flex;
 	flex-wrap: wrap;
