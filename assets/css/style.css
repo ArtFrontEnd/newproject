@@ -63,6 +63,22 @@ header{
 	vertical-align: middle;
 	margin-left: 100px;
 }
+.form-wrapper{
+	background-color: rgb(54, 62, 151);
+}
+.form-block{
+	display: flex;
+	justify-content: space-between;
+}
+.form-block .left-block .row{
+	display: block;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	color: white;
+	font-family: "Roboto";
+	font-size: 20px;
+}
+
 .nav-list{
 	display: inline-block;
 	vertical-align: middle;
