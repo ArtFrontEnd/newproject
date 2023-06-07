@@ -68,7 +68,7 @@ header{
 }
 .form-block{
 	display: flex;
-	justify-content: space-between;
+	justify-content: start;
 }
 .form-block .left-block .row{
 	display: block;
@@ -78,7 +78,52 @@ header{
 	font-family: "Roboto";
 	font-size: 20px;
 }
+.form-block .right-block{
+	padding-left: 150px;
+	padding-top: 25px;
+	width: 80%;
+}
+.form-block .form-group{
+	display: flex;
+	flex-direction: column;
+}
+.form-block .label{
+	text-transform: capitalize;
+	font-family: "Roboto";
+	font-size: 20px;
+	color: white;
+}
+.form-block .input{
+	padding-left: 20px;
+	background-color: transparent;
+	outline: none;
+	border: 1px solid white;
+	height: 60px;
+	font-size: 20px;
+	font-family: "Roboto";
+	color: white;
+	width: 80%;
+	margin: 10px 0;
+}
+.form-block .textarea{
+	padding-top: 20px;
+	height: 100px;
 
+}
+.right-block .send{
+	height: 70px;
+	width: 140px;
+	background-color: red;
+	outline: none;
+	border: 1px solid white;
+	font-size: 20px;
+	font-family: "Roboto";
+	text-transform: uppercase;
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
 .nav-list{
 	display: inline-block;
 	vertical-align: middle;
