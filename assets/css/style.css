@@ -282,12 +282,21 @@ header{
 .part-article:nth-child(4){
 	margin-top: 0;
 }
+
 @media (max-width: 1102px){
 	.part-article:nth-child(4){
-	margin-top: 30px;
+		margin-top: 30px;
 	}
 }
 @media (max-width: 1024px){
+	.form-block .left-block{
+		text-align: center;
+	} 
+	.form-block .right-block{
+		padding-left: 5%;
+		padding-top: 25px;
+		width: 100%;
+	}
 	.parent-header{
 		left: 0;
 		padding: 0;
@@ -329,6 +338,11 @@ header{
 	}
 	.header-nav.active{
 		left: 0;
+	}
+	.form-block{
+		display: flex;
+		justify-content: start;
+		flex-direction: column-reverse;
 	}
 }
 @media (max-width: 480px){
