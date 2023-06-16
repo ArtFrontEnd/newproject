@@ -16,7 +16,7 @@
 }
 .parent-header{
 	position: fixed;
-	background-color: silver;
+	background-color: white;
 	width: 100%;
 	display: flex;
 	top: 0;
@@ -30,11 +30,49 @@
 }
 .burger-icon{
 	margin-right: 30px;
-	float: right;
+	/* float: right; */
 	display: none;
 	width: 60px;
 	height: 60px;
-	background-image: url('../images/burger-list-menu-navigation.svg');
+	background-color: white;
+	border: 3px solid blue;
+	position: relative;
+	overflow: hidden;
+}
+.burger-icon .line{
+	width: 40px;
+	height: 3px;
+	left: 50%;
+	position: absolute;
+	background-color: blue;
+	opacity: 1;
+	visibility: visible;
+	transform: translate(-50%, -50%);
+	transition:	all .5s linear;
+}
+.burger-icon .line:nth-child(1){
+	top: 30%;
+}	
+.burger-icon .line:nth-child(2){
+	top: 50%;
+	left: inherit;
+	right: 50%;
+	transform: translate(50%, -50%) rotate(0);
+}	
+.burger-icon .line:nth-child(3){
+	top: 70%;
+}	
+.burger-icon.active .line:nth-child(1){
+	transform: translate(-50%, -50%) rotate(-45deg);
+	top: 50%;
+}
+.burger-icon.active .line:nth-child(2){
+	opacity: 0;
+	visibility: hidden;
+}
+.burger-icon.active .line:nth-child(3){
+	transform: translate(-50%, -50%) rotate(45deg);
+	top: 50%;
 }
 header{
 	padding-top: 20px;
@@ -211,7 +249,7 @@ header{
 	height: 320px;
 	background-color: #f2f2f2;
 }
-.videos-parent .part-video span{
+/* .videos-parent .part-video span{
 	/* font-size: 50px; */
  	position: absolute; 
 	left: 50%;
@@ -238,7 +276,7 @@ header{
 	}
 		100%{
 			transform: translate3d(-50%, -50%, 0) rotate(0deg)skewX(0deg);
-	}
+	} */
 }
 .article-container{
 	display: flex;
@@ -323,21 +361,25 @@ header{
 	}
 	.header-nav{
 		position: fixed;
-		width: 100%;
-		height: calc(100% - 130px);
-		top: 130px;
-		left: -100%;
-		background: red;
-		opacity: 0.5;
+		float: left;
+		width: 160px;
+		top: -100%;
+		bottom: 100%;
+		left: inherit;
+		right: 0;
+		background: white;
+		opacity: 0.8;
 		margin-left: inherit;
 	/*	transition-property: left;
 		transition-duration: 5s;
 		transition-timing-function: ease;
 		transition-delay: 5s;*/
-		transition: left .3s ease;
+		transition: all .5s ease;
+		/* transition: top .3s ease; */
 	}
 	.header-nav.active{
-		left: 0;
+		top: 103px;
+		bottom: inherit;
 	}
 	.form-block{
 		display: flex;
